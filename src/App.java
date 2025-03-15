@@ -25,3 +25,4 @@ class App {
         frame.setVisible(true);
     }
 }
+
