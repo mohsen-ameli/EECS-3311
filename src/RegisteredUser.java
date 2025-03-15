@@ -1,4 +1,4 @@
-public abstract class RegisteredUser extends User {
+public class RegisteredUser extends User {
     private PaymentMethod[] paymentMethod;
     private Booking[] bookings;
     
