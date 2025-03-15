@@ -1,6 +1,6 @@
 import java.util.UUID;
 
-public abstract class User {
+public class User {
     protected String userID;
     protected String firstName;
     protected String lastName;
@@ -44,9 +44,6 @@ public abstract class User {
         // Implement logout logic here
         return null; // Placeholder return value
     }
-
-    // Method to generate unique user ID
-    // I want to use a uuid generator here
 
     private String generateUserID() {
         return UUID.randomUUID().toString();
