@@ -1,3 +1,5 @@
+import java.util.UUID;
+
 public abstract class User {
     protected String userID;
     protected String firstName;
@@ -30,15 +32,23 @@ public abstract class User {
     public void setUsername(String username) { this.username = username; }
     public void setEmail(String email) { this.email = email; }
 
-    // Abstract methods
-    public abstract boolean register();
-    public abstract boolean login();
-    public abstract boolean logout();
-
-    // Method to generate unique user ID
-    private String generateUserID() {
-        // Use a static counter to generate unique IDs
-        return "1"; // Placeholder value
+    public static boolean register() {
+        // Implement registration logic here
+        return true; // Placeholder return value
+    }
+    public static boolean login() {
+        // Implement login logic here
+        return true; // Placeholder return value
+    }
+    public static User logout() {
+        // Implement logout logic here
+        return null; // Placeholder return value
     }
 
+    // Method to generate unique user ID
+    // I want to use a uuid generator here
+
+    private String generateUserID() {
+        return UUID.randomUUID().toString();
+    }
 }

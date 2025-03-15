@@ -19,11 +19,5 @@ public class SuperManager extends Manager {
         // Generate manager account logic
         return null;
     }
-
-    private void assignToManager(Manager manager) {
-        // the uml diagram says that we have a ManagerTeam class?? tf is that?? we dont have that bro... 
-        // this is about the parameter ^^^
-        // Assign manager logic
-    }
     
 }

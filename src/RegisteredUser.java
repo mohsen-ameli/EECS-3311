@@ -6,12 +6,6 @@ public abstract class RegisteredUser extends User {
         super(firstName, lastName, email, password);
     }
     
-    @Override
-    public boolean register() {
-        // Base registration logic requiring validation
-        return false;
-    }
-    
     public Booking[] getBookings() {
         return bookings;
     }
@@ -26,10 +20,5 @@ public abstract class RegisteredUser extends User {
 
     public void makePayment() {
         // Cancel booking logic
-    }
-
-    public Booking[] requestBookingHistory() {
-        // Request booking history logic
-        return null;
     }
 }
