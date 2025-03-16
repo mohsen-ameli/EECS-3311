@@ -1,6 +1,7 @@
+
 import java.util.UUID;
 
-public class User {
+public class User implements UserInterface {
     protected String userID;
     protected String firstName;
     protected String lastName;
@@ -10,20 +11,37 @@ public class User {
     protected String userType;
 
     // Constructor
-    public User(String firstName, String lastName, String email, String password) {
+    public User(String firstName, String lastName, String email, String password, String userType) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.userType = userType;
         this.userID = generateUserID(); // Method to generate unique ID
     }
 
     // Getters
-    public String getUserID() { return userID; }
-    public String getFirstName() { return firstName; }
-    public String getLastName() { return lastName; }
-    public String getUsername() { return username; }
-    public String getEmail() { return email; }
+    @Override
+    public String getUserID() {
+        return userID;
+    }
+    @Override
+    public String getFirstName() {
+        return firstName;
+    }
+    @Override
+    public String getLastName() {
+        return lastName;
+    }
+    @Override
+    public String getUsername() {
+        return username;
+    }
+    @Override
+    public String getEmail() {
+        return email;
+    }
+    @Override
     public String getUserType() { return userType; }
 
     // Setters
@@ -38,6 +56,7 @@ public class User {
     }
     public static boolean login() {
         // Implement login logic here
+        //return db.validateUser(username, password);
         return true; // Placeholder return value
     }
     public static User logout() {
