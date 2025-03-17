@@ -1,16 +1,17 @@
 public class SuperManager extends Manager {
     private static SuperManager instance;
-    
-    private SuperManager(String firstName, String lastName, String email, String password, String managerID) {
-        super(firstName, lastName, email, password, managerID);
-        this.userType = "SuperManager";
+
+    private SuperManager(String username, String password, String userType, String firstName, String lastName,
+            String email) {
+        super(username, password, userType, firstName, lastName, email);
     }
-    
+
     // Singleton pattern implementation
-    public static SuperManager getInstance(String firstName, String lastName, String email, 
-                                           String password, String managerID) {
+    public static SuperManager getInstance(String username, String password, String userType, String firstName,
+            String lastName,
+            String email) {
         if (instance == null) {
-            instance = new SuperManager(firstName, lastName, email, password, managerID);
+            instance = new SuperManager(username, password, userType, firstName, lastName, email);
         }
         return instance;
     }
@@ -19,5 +20,5 @@ public class SuperManager extends Manager {
         // Generate manager account logic
         return null;
     }
-    
+
 }

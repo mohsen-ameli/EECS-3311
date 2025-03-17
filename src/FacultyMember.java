@@ -1,10 +1,8 @@
 public class FacultyMember extends RegisteredUser {
 
-    public FacultyMember(String firstName, String lastName, String email, String password, 
-            String userID) {
-        super(firstName, lastName, email, password, "Faculty", userID);
-        
+    public FacultyMember(String username, String password, String userType, String firstName, String lastName,
+            String email) {
+        super(username, password, userType, firstName, lastName, email);
     }
-   
 
 }

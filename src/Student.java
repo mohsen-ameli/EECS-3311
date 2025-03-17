@@ -1,7 +1,7 @@
 public class Student extends RegisteredUser {
-    
-    public Student(String firstName, String lastName, String email, String password, String userID) {
-        super(firstName, lastName, email, password, "Student", userID);
 
+    public Student(String username, String password, String userType, String firstName, String lastName,
+            String email) {
+        super(username, password, userType, firstName, lastName, email);
     }
 }
