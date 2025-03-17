@@ -21,27 +21,27 @@ public class User implements UserInterface {
     }
 
     // Getters
-    @Override
+   
     public String getUserID() {
         return userID;
     }
-    @Override
+
     public String getFirstName() {
         return firstName;
     }
-    @Override
+ 
     public String getLastName() {
         return lastName;
     }
-    @Override
+
     public String getUsername() {
         return username;
     }
-    @Override
+
     public String getEmail() {
         return email;
     }
-    @Override
+
     public String getUserType() { return userType; }
 
     // Setters
