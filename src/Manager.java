@@ -1,8 +1,8 @@
 public class Manager extends User {
     
-    public Manager(String firstName, String lastName, String email, String password, String managerID) {
-        super(firstName, lastName, email, password);
-        this.userType = "Manager";
+    public Manager(String firstName, String lastName, String email, String password, String userID) {
+        super(firstName, lastName, email, password, "Manager", userID);
+       
     }
     
     public void addParkingLot(ParkingLot parkingLot) {

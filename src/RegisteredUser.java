@@ -1,12 +1,16 @@
+import java.util.ArrayList;
+
 public class RegisteredUser extends User {
-    private PaymentMethod[] paymentMethod;
-    private Booking[] bookings;
+    private ArrayList<PaymentMethod> paymentMethod;
+    private ArrayList<Booking> bookings;
     
-    public RegisteredUser(String firstName, String lastName, String email, String password) {
-        super(firstName, lastName, email, password);
+    public RegisteredUser(String firstName, String lastName, String email, String password, String userType, String userID) {
+        super(firstName, lastName, email, password, userType, userID);
+        this.paymentMethod = new ArrayList<>();
+        this.bookings = new ArrayList<>();
     }
     
-    public Booking[] getBookings() {
+    public ArrayList<Booking> getBookings() {
         return bookings;
     }
 
