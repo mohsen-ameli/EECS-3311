@@ -9,7 +9,8 @@ public class App {
     private CardLayout cardLayout;
 
     public static void main(String[] args) {
-        App a = new App();
+        // App a = new App();
+        User.register("test", "testing", "test@mail.com", "testing321");
     }
 
     public void registerPage() {
