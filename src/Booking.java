@@ -1,4 +1,4 @@
-import java.sql.Date;
+import java.util.Date;
 
 public class Booking {
     private String bookingID;
@@ -39,7 +39,7 @@ public class Booking {
     private boolean editBooking() {
         // To be implemented
         return false;
-    } 
+    }
 
     private double extendBooking(Date time) {
         // To be implemented
@@ -53,6 +53,5 @@ public class Booking {
     private void changeBookingLocation(ParkingSpace space) {
         // To be implemented
     }
-
 
 }
