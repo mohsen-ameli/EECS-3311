@@ -11,7 +11,7 @@ public class User implements UserInterface {
     protected String userType;
 
     // Constructor
-    public User(String firstName, String lastName, String email, String password, String userType) {
+    public User(String firstName, String lastName, String email, String password, String userType, String userID) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

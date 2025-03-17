@@ -10,7 +10,7 @@ public class UserFactory {
             case "manager":
                 return new Manager(firstName, lastName, email, password, userID);
             case "visitor":
-                return new Visitor(firstName, lastName, email, password);
+                return new Visitor(firstName, lastName, email, password, userID);
             default:
                 throw new IllegalArgumentException("Invalid user type");
         }
