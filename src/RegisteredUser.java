@@ -3,13 +3,14 @@ import java.util.ArrayList;
 public class RegisteredUser extends User {
     private ArrayList<PaymentMethod> paymentMethod;
     private ArrayList<Booking> bookings;
-    
-    public RegisteredUser(String firstName, String lastName, String email, String password, String userType, String userID) {
-        super(firstName, lastName, email, password, userType, userID);
+
+    public RegisteredUser(String username, String password, String userType, String firstName, String lastName,
+            String email) {
+        super(username, password, userType, firstName, lastName, email);
         this.paymentMethod = new ArrayList<>();
         this.bookings = new ArrayList<>();
     }
-    
+
     public ArrayList<Booking> getBookings() {
         return bookings;
     }

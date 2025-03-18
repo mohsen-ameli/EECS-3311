@@ -13,10 +13,9 @@ public class ParkingSensor {
         // implement logic here
         return false;
     }
-    
+
     public String scanLicensePlate() {
         // Simulate license plate scanning
-        return "ABC-123";  // Placeholder
+        return "ABC-123"; // Placeholder
     }
 }
-
